@@ -34,7 +34,7 @@ namespace silliness.Menu
             MenuBackgroundRenderer.material.shader = Shader.Find("GorillaTag/UberShader");
             MenuBackgroundRenderer.material.color = MenuBackgroundColor;
             
-            // Menu Background
+            // Categories Background
             Transform MenuBackground2 = Holder.gameObject.transform.Find("MenuBackground2");
             Renderer MenuBackgroundRenderer2 = MenuBackground2.GetComponent<Renderer>();
             MenuBackground2.GetComponent<BoxCollider>().enabled = false;

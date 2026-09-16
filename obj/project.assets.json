@@ -1,11 +1,11 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
-    ".NETStandard,Version=v2.1": {}
+    "netstandard2.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": []
+    "netstandard2.1": []
   },
   "packageFolders": {
     "/home/libval/.nuget/packages/": {}
@@ -45,7 +45,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "netstandard2.1": {
@@ -73,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.111/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/libval/.dotnet/sdk/10.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
