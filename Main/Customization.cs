@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace silliness.Menu
+namespace silliness.Main
 {
     public class Customization
     {

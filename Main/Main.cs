@@ -1,10 +1,11 @@
+using GorillaLocomotion;
 using HarmonyLib;
 using TMPro;
 using UnityEngine;
 using static TMPro.TextMeshPro;
-using static silliness.Menu.Customization;
+using static silliness.Main.Customization;
 
-namespace silliness.Menu
+namespace silliness.Main
 {
     [HarmonyPatch(typeof(GorillaLocomotion.GTPlayer))]
     [HarmonyPatch("LateUpdate", MethodType.Normal)]
@@ -42,13 +43,17 @@ namespace silliness.Menu
             MenuBackgroundRenderer2.material.shader = Shader.Find("GorillaTag/UberShader");
             MenuBackgroundRenderer2.material.color = MenuBackgroundColor;
             
-            
-            
-            // Title
-            Transform Title = Holder.gameObject.transform.Find("BackgroundCanvas/Title");
-            TextMeshProUGUI TitleTextTMP = Title.GetComponent<TextMeshProUGUI>();
+            // Title Text
+            Transform TitleText = Holder.gameObject.transform.Find("BackgroundCanvas/TitleText");
+            TextMeshProUGUI TitleTextTMP = TitleText.GetComponent<TextMeshProUGUI>();
 
             TitleTextTMP.color = (Color)TitleColor;
+            
+            // Categories Text
+            Transform CategoriesText = Holder.gameObject.transform.Find("BackgroundCanvas/CategoriesText");
+            TextMeshProUGUI CategoriesTextTMP = CategoriesText.GetComponent<TextMeshProUGUI>();
+
+            CategoriesTextTMP.color = (Color)TitleColor;
             
             // FPS Text
             Transform FPSText = Holder.gameObject.transform.Find("BackgroundCanvas/FPSText");
